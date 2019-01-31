@@ -15,6 +15,7 @@
    linux-introduction
    linux-qemu
    linux-hifive-u
+   linux-polarfire-soc
 
 .. toctree::
    :caption: Zephyr

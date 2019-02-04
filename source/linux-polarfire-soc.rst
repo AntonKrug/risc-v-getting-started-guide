@@ -9,7 +9,8 @@ It's a very good starting point if you want to get Linux running on a physical c
 Prerequisites
 -------------
 
-Building Linux for the PolarFire SoC requires at least 7GB of RAM (more for multi-threaded builds), 20GB of HHD space and install prerequisites.
+Building Linux for the PolarFire SoC requires at least 7GB of RAM (more for multi-threaded builds), 20GB of HHD space and installed prerequisites. Recommended distributions are: Debian 9, RHEL/CentOS 7, Ubuntu 16.
+
 Find instructions for Linux below:
 
 .. tabs::
@@ -37,11 +38,11 @@ Find instructions for Linux below:
                                  screen texinfo unzip patch wget vim-common
 
 
-Each distribution requires slightly different instructions:
+Each distribution requires slightly different steps:
 
 .. tabs::
 
-   .. tab:: Ubuntu Trusty/Xenial/Artful/Bionic/Cosmic
+   .. tab:: Ubuntu 14/16/17/18
 
       .. code-block:: bash
 

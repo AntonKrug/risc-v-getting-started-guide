@@ -59,17 +59,17 @@ Each distribution requires slightly different steps:
          # AMD radeon firmware
          sudo yum install -y xorg-x11-drv-ati-firmware
 
-         #devtoolset-2 provides sudo wrapper which breaks current sudo, remove it
+         # devtoolset-2 provides sudo wrapper which breaks current sudo, remove it
          # https://unix.stackexchange.com/questions/192809/sudo-i-returns-an-error
          # https://bugzilla.redhat.com/show_bug.cgi?id=1319936
 
          sudo rm /opt/rh/devtoolset-2/root/usr/bin/sudo 
 
-         #Checking if the GCC 4.8 got installed
+         # Checking if the GCC 4.8 got installed
          sudo source scl_source enable devtoolset-2
          gcc --version
 
-         #Make sure the GCC 4.8 is default and not the GCC 4.4"
+         # Make sure the GCC 4.8 is default and not the GCC 4.4"
          sudo echo "source scl_source enable devtoolset-2" >> /etc/bashrc
 
          # Device tree compiler is missing in default centos 6 repository, adding epel repository
@@ -96,7 +96,7 @@ Each distribution requires slightly different steps:
          sudo echo "deb-src http://deb.debian.org/debian stretch main non-free" >> /etc/apt/sources.list.d/nonfree.list
          sudo apt-get update
 
-         #Installing amd firmware
+         # Installing amd firmware
          sudo apt-get install -y firmware-amd-graphics
 
 

@@ -15,7 +15,7 @@ Find instructions for Linux below:
 
 .. tabs::
 
-   .. tab:: RHEL/Centos
+   .. tab:: RHEL/CentOS
 
       .. code-block:: bash
 
@@ -49,10 +49,10 @@ Each distribution requires slightly different steps:
          sudo apt-get install -y linux-firmware
 
 
-   .. tab:: Centos 6 (not recommended)
+   .. tab:: CentOS 6 (not recommended)
       .. code-block:: bash
-         # Centos requires GCC 4.8
-         sudo  wget http://people.centos.org/tru/devtools-2/devtools-2.repo -O /etc/yum.repos.d/devtools-2.repo
+         # CentOS requires GCC 4.8
+         sudo wget http://people.centos.org/tru/devtools-2/devtools-2.repo -O /etc/yum.repos.d/devtools-2.repo
          sudo yum update
          sudo yum install -y devtoolset-2-gcc devtoolset-2-binutils devtoolset-2-gcc-c++
 
@@ -78,25 +78,28 @@ Each distribution requires slightly different steps:
          sudo yum update
          sudo yum install -y dtc
 
+   .. tab:: CentOS 7 
+      .. code-block:: bash
+         # Nothing extra needed for CentOS 7
 
    .. tab:: Debian 8 (not recommended)
       .. code-block:: bash
-         # Adding stretch backports for jessie
+         # Adding Stretch backports for Jessie
          sudo echo "deb http://http.debian.net/debian jessie-backports main contrib non-free" >> /etc/apt/sources.list.d/backports.list
          sudo apt-get update
 
-         # Installing amd firmware
+         # Installing AMD firmware
          sudo apt-get install -y firmware-amd-graphics
 
 
    .. tab:: Debian 9
       .. code-block:: bash
-         # Adding non-free stretch repository to the apt sources
+         # Adding non-free Stretch repository to the apt sources
          sudo echo "deb http://deb.debian.org/debian stretch main non-free" >> /etc/apt/sources.list.d/nonfree.list
          sudo echo "deb-src http://deb.debian.org/debian stretch main non-free" >> /etc/apt/sources.list.d/nonfree.list
          sudo apt-get update
 
-         # Installing amd firmware
+         # Installing AMD firmware
          sudo apt-get install -y firmware-amd-graphics
 
 
